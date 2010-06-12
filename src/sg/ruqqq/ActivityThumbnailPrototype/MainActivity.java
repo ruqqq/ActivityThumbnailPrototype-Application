@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         		d(LOG_TAG, "	Bitmap found: "+b);
         		// Faruq: Create ImageView object and set the content to the bitmap
 	        	ImageView iv = new ImageView(this);
-	        	ViewGroup.MarginLayoutParams mlp = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+	        	ViewGroup.MarginLayoutParams mlp = new ViewGroup.MarginLayoutParams(b.getWidth(), b.getHeight());
 	        	mlp.setMargins(10, 10, 10, 10);
 	        	iv.setLayoutParams(mlp);
 	        	iv.setImageBitmap(b);

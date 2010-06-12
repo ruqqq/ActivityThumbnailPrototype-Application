@@ -10,9 +10,9 @@
   	  <LinearLayout
   	  	android:id="@+id/llImage_test"
   	  	android:orientation="horizontal"
-  	  	android:layout_width="fill_parent"
+  	  	android:layout_width="wrap_content"
   		android:layout_height="fill_parent"
-  		android:gravity="center|center_vertical">
+  		android:gravity="center_vertical">
   	  </LinearLayout>
   </HorizontalScrollView>
 </LinearLayout>
