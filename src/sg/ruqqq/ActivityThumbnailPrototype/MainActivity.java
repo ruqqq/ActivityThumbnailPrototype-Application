@@ -8,6 +8,8 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -34,6 +36,9 @@ public class MainActivity extends Activity {
         		d(LOG_TAG, "	Bitmap found: "+b);
         		// Faruq: Create ImageView object and set the content to the bitmap
 	        	ImageView iv = new ImageView(this);
+	        	ViewGroup.MarginLayoutParams mlp = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+	        	mlp.setMargins(10, 10, 10, 10);
+	        	iv.setLayoutParams(mlp);
 	        	iv.setImageBitmap(b);
 	        	
 	        	// Faruq: Add the iv to the Layout we have
